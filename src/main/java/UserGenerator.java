@@ -15,5 +15,8 @@ public class UserGenerator {
             return new User("example" + random.nextInt(10_000_000) + "@mail.ru", "");
         }
 
+    public static User getWithWrongEmailAndNoPass() {
+        return new User("example" + random.nextInt(10_000_000) + "@mail.", "");
+    }
     }
 

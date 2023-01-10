@@ -17,4 +17,11 @@ public abstract class BaseObjectPage {
         new WebDriverWait(driver, 6)
                 .until(ExpectedConditions.elementToBeClickable(element));
     }
+    public void pause() {
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

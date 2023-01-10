@@ -20,14 +20,6 @@ public class LoginPage extends BaseObjectPage {
         driver.get(LOGIN_PAGE);
         return this;
     }
-    public LoginPage pause() {
-        try {
-            Thread.sleep(2000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        return this;
-    }
 
     public LoginPage setEmail(String email){
         WebElement element = driver.findElement(emailField);
